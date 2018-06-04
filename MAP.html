@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title> My First Website
+    </title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'>
+    </script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
+   
+</head>
+
+<body>
+    <nav id="topMenu" > 
+    <ul> 
+    <li><a class="menuLink" href="HOME.html">HOME</a></li> 
+    <li><a class="menuLink" href="QA.html">QA</a></li> 
+    <li><a class="menuLink" href="#">Data</a></li>
+    <li><a class="menuLink" href="MAP.html">MAP</a></li> 
+    <li><a class="menuLink" href="ABOUT.html">ABOUT</a></li> 
+    </ul>
+    </nav><br>
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoidWtjaG9uZyIsImEiOiJjajZ2cGNhYXoxNjQyMzJuemN2aWdkM3BoIn0.eg2Et8Zxiz_jSDlRSn5_mA';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/ukchong/cj6vpcvmp8d862sprsc4lw61v', // stylesheet location
+    center: [151.209900, -33.865143], // starting position [lng, lat]
+    zoom: 15 // starting zoom
+});
+</script>
+
+<sidebar style="position:absolute; top: 50px; left: 75%; text-align:left;">
+<h1> 2011 - Make it as button </h1>
+<h2> 2016 - Make it as button </h2>
+<p2>These maps graphically portraits
+    how many young couples could afford properties in certain areas of Sydney.<br>
+    It will show the population of specific groups of generations in Sydney based on 2011 and 2016 census research.<br>
+    You will be able to find the gradual changes between 2011-2016 in different areas by comparing the two maps.<br><br>
+    The result turned out with significant increase of number in purchaing properties amongst younger generation according to the dataset.<br>
+    This could be a positive evidence which proves the partial success of recent policies by government about providing chances of purchasing properties for younger generations and first home buyers.<br>
+   
+
+
+</p2>
+</sidebar>
+
+
+
+</body>
+
+ <style>
+        body { margin:0; padding:0; }
+        h1 { font-size:20px; }
+        h2 { font-size: 20px; }
+    #map { position:absolute; top:70px; left:3%; bottom:0; width:70%; position:fixed;}
+    #topMenu 
+        {position:top; height: 5px; width: 95%; } 
+#topMenu 
+ul li   {list-style: none; color: white;  
+        background-color: #2d2d2d;  
+        float: left;line-height: 30px; margin:0; width:20%;
+        vertical-align: middle; text-align: center;} 
+#topMenu .menuLink 
+        {text-decoration:none; color: white;  
+        display: block; width: 235px; font-size: 12px; 
+        font-weight: bold;  
+        font-family: "Trebuchet MS", Arial;}
+ #topMenu .menuLink:hover 
+        { color: #2d2d2d; background-color: white;
+
+    </style>
+
+</html>
